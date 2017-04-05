@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "492741900165",
+    "firebase_url": "https://connectedhome-af3ed.firebaseio.com",
+    "project_id": "connectedhome-af3ed",
+    "storage_bucket": "connectedhome-af3ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492741900165:android:a90f6f3e110f18de",
+        "android_client_info": {
+          "package_name": "com.example.android.connectedhome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492741900165-uopdfg1jvpe49k3614ldq7vtj4hh4rjc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.connectedhome",
+            "certificate_hash": "7a8c71a45d15865d0dc886594347511cec9fff5d"
+          }
+        },
+        {
+          "client_id": "492741900165-jnasik2e8s28pn1ke23sr1bicmd7s9i7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNmMJ3Hi4o5HkB-d7zQBizCjw6oTmvY7A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492741900165-jnasik2e8s28pn1ke23sr1bicmd7s9i7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
