@@ -1,5 +1,6 @@
 package com.example.android.connectedhome;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -33,10 +34,18 @@ public class MainActivity extends AppCompatActivity {
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
+                FirebaseUser user = mAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
-                    onSignedInInitialize(user.getDisplayName());
+                   // onSignedInInitialize(user.getDisplayName());
+
+                    Context context = getApplicationContext();
+                    CharSequence text = "Hello girdi!";
+                    int duration = Toast.LENGTH_SHORT;
+
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+
 
 
                 } else {
@@ -52,8 +61,16 @@ public class MainActivity extends AppCompatActivity {
                                             new AuthUI.IdpConfig.Builder(AuthUI.FACEBOOK_PROVIDER).build()))
                                     .build(),
                             RC_SIGN_IN);
+
+
+                    Context context = getApplicationContext();
+                    CharSequence text = "Hello girmedi!";
+                    int duration = Toast.LENGTH_SHORT;
+
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
                 }
-                // ...
+
             }
         };
 
@@ -80,10 +97,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void onSignedInInitialize(String username){
-        mUsername = username;
+    //private void onSignedInInitialize(String username){
+      //  mUsername = username;
 
-    }
+   // }
 
     private void onSignedOutCleanup(){
 
